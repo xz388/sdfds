@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="انضم إلى مجتمعنا النشط على ديسكورد - مناقشات مثيرة، إدارة محترفة، وقنوات متنوعة">
+    <meta name="keywords" content="ديسكورد, سيرفر عربي, مجتمع, دردشة, قيمنق">
+    <meta property="og:title" content="سيرفر ديسكورد المجتمع">
+    <meta property="og:description" content="انضم إلى مجتمعنا النشط على ديسكورد">
+    <meta property="og:image" content="discord-logo.png">
+    <title>سيرفر ديسكورد المجتمع - انضم إلينا الآن</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="discord-logo.png" alt="شعار الديسكورد">
+            </div>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#features">المميزات</a></li>
+                <li><a href="#join">انضم إلينا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>مرحباً بك في مجتمعنا</h1>
+            <p>انضم إلى مجتمعنا النشط والمتفاعل على ديسكورد</p>
+            <a href="https://discord.gg/eJNjuGGphc" class="join-btn">انضم الآن</a>
+        </section>
+
+        <section id="features" class="features">
+            <h2>مميزات السيرفر</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>مجتمع نشط</h3>
+                    <p>تفاعل مستمر ومناقشات مثيرة</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>إدارة محترفة</h3>
+                    <p>فريق إداري متميز لضمان تجربة آمنة وممتعة</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>قنوات متنوعة</h3>
+                    <p>قنوات متخصصة لمختلف المواضيع والاهتمامات</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="join">
+            <h2>انضم إلينا الآن</h2>
+            <p>كن جزءاً من مجتمعنا المتنامي</p>
+            <a href="https://discord.gg/eJNjuGGphc" class="join-btn">
+                <i class="fab fa-discord"></i>
+                انضم للسيرفر
+            </a>
+            <div class="share-buttons">
+                <h3>شارك الموقع مع أصدقائك</h3>
+                <div class="social-share">
+                    <a href="#" onclick="shareOnWhatsApp()" class="share-btn whatsapp" title="مشاركة على واتساب">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" onclick="shareOnTelegram()" class="share-btn telegram" title="مشاركة على تيليجرام">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" onclick="shareOnTwitter()" class="share-btn twitter" title="مشاركة على تويتر">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" onclick="shareOnFacebook()" class="share-btn facebook" title="مشاركة على فيسبوك">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" onclick="copyLink()" class="share-btn copy-link" title="نسخ الرابط">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </div>
+                <p class="share-tip">اضغط على أي أيقونة للمشاركة</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+        <p class="creator">تم الصنع بواسطة s7.7</p>
+    </footer>
+
+    <script>
+        function shareOnWhatsApp() {
+            const text = "🎮 انضم إلى مجتمعنا الرائع على ديسكورد! نقاشات شيقة، ألعاب، وأصدقاء جدد ينتظرونك";
+            const url = window.location.href;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text + '\n' + url)}`);
+        }
+
+        function shareOnTelegram() {
+            const text = "🎮 انضم إلى مجتمعنا الرائع على ديسكورد! نقاشات شيقة، ألعاب، وأصدقاء جدد ينتظرونك";
+            const url = window.location.href;
+            window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`);
+        }
+
+        function shareOnTwitter() {
+            const text = "🎮 انضم إلى مجتمعنا الرائع على ديسكورد! نقاشات شيقة، ألعاب، وأصدقاء جدد ينتظرونك";
+            const url = window.location.href;
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`);
+        }
+
+        function shareOnFacebook() {
+            const url = window.location.href;
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`);
+        }
+
+        function copyLink() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                const tip = document.querySelector('.share-tip');
+                tip.textContent = '✅ تم نسخ الرابط بنجاح!';
+                setTimeout(() => {
+                    tip.textContent = 'اضغط على أي أيقونة للمشاركة';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html> 
